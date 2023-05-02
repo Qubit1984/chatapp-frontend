@@ -50,7 +50,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         };
         setNewMessage("");
         const { data } = await axios.post(
-          "http://chat.boliang.fun/api/message",
+          "https://chat.boliang.fun/api/message",
           {
             content: newMessage,
             chatId: selectedChat._id,
@@ -105,7 +105,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       setLoading(true);
 
       const { data } = await axios.get(
-        `http://chat.boliang.fun/api/message/${selectedChat._id}`,
+        `https://chat.boliang.fun/api/message/${selectedChat._id}`,
         config
       );
       setMessages(data);

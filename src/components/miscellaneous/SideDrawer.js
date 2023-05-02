@@ -77,7 +77,7 @@ const SideDrawer = () => {
       };
 
       const { data } = await axios.get(
-        `http://chat.boliang.fun/api/user?search=${search}`,
+        `https://chat.boliang.fun/api/user?search=${search}`,
         config
       );
 
@@ -107,7 +107,7 @@ const SideDrawer = () => {
         },
       };
       const { data } = await axios.post(
-        `http://chat.boliang.fun/api/chat`,
+        `https://chat.boliang.fun/api/chat`,
         { userId },
         config
       );

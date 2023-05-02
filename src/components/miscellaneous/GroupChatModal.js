@@ -59,7 +59,7 @@ const GroupChatModal = ({ children }) => {
         },
       };
       const { data } = await axios.get(
-        `http://chat.boliang.fun/api/user?search=${search}`,
+        `https://chat.boliang.fun/api/user?search=${search}`,
         config
       );
       setLoading(false);
@@ -99,7 +99,7 @@ const GroupChatModal = ({ children }) => {
         },
       };
       const { data } = await axios.post(
-        `http://chat.boliang.fun/api/chat/group`,
+        `https://chat.boliang.fun/api/chat/group`,
         {
           name: groupChatName,
           users: JSON.stringify(selectedUsers.map((u) => u._id)),
