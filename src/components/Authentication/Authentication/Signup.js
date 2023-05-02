@@ -53,7 +53,7 @@ const Signup = () => {
         },
       };
       const { data } = await axios.post(
-        "/api/user",
+        "http://chat.boliang.fun/api/user",
         {
           name,
           email,

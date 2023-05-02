@@ -40,7 +40,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "/api/user/login",
+        "http://chat.boliang.fun/api/user/login",
         { email, password },
         config
       );
